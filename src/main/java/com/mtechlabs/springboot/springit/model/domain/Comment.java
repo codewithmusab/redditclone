@@ -1,9 +1,11 @@
 package com.mtechlabs.springboot.springit.model.domain;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-public class Comment {
+@Entity
+public class Comment  extends Auditable{
     @Id
     @GeneratedValue
     private Long id;
